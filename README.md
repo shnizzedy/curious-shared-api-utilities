@@ -1,31 +1,14 @@
 # Child Mind Institute - Curious Admin
 
-This repository is used for the Admin Panel of the [Curious](https://mindlogger.org/) application stack.
+This repository is used for the shared API utilities of the [Curious](https://mindlogger.org/) application stack.
 
 ## Getting Started
 
-* Curious Admin - **This Repo**
+* Curious Admin - [GitHub Repo](https://github.com/ChildMindInstitute/mindlogger-admin)
 * Curious Backend - [GitHub Repo](https://github.com/ChildMindInstitute/mindlogger-backend-refactor)
 * Curious Mobile App - [GitHub Repo](https://github.com/ChildMindInstitute/mindlogger-app-refactor)
+* Curious Shared API Utilities - **This Repo**
 * Curious Web App - [GitHub Repo](https://github.com/ChildMindInstitute/mindlogger-web-refactor)
-
-## Application Stack
-
-Running the app:
-
-### 1. Prerequisites
-
-* NodeJS `22` or higher, recommend using `asdf` or `nvm` to manage local node version
-* [Backend](https://github.com/ChildMindInstitute/mindlogger-backend-refactor) project running locally or accessible in a test environment
-  * If running locally, ensure that `http://localhost:3000` has been added to the BE's `CORS__ALLOW_ORIGINS` environment variable
-* Configured [environment variables](#environment-variables):\
-  `cp .env.example .env`
-
-### 2. Run the app
-
-* Install dependencies using `npm install`
-* Run the project using `npm run start`. See [scripts](#available-scripts)
-* Launch browser [http://localhost:3000](http://localhost:3000) to view the admin panel
 
 ## Features
 
@@ -42,44 +25,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * [RTK Query](https://redux-toolkit.js.org/rtk-query/overview) - Data fetching and caching tool, included in Redux Toolkit <sup>[[1]](#footnote-1)</sup>
 * [Axios](https://axios-http.com/) - Promise-based HTTP Client, used by RTK Query to execute queries
 * [React-app-rewired](https://github.com/timarney/react-app-rewired/) - All the benefits of create-react-app without the limitations of "no config"
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### Running the app
-
-* `npm start`
-
-    Runs the app in the development mode.\
-    Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-    The page will reload if you make edits.\
-    You will also see any lint errors in the console.
-
-* `npm start:checkCycles`
-
-    The same as `npm start`, but with cycle dependency analysis logging.
-
-* `npm run build`
-
-    Builds the app for production to the `build` folder.\
-    It correctly bundles React in production mode and optimizes the build for the best performance.
-
-    The build is minified and the filenames include the hashes.\
-    Your app is ready to be deployed!
-
-    See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-* `npm run eject`
-
-    **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-    If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-    Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-    You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ### Testing
 
@@ -107,6 +52,10 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 | REACT_APP_DD_TRACING_URLS        | no       | <http://localhost:3000> | Comma separated URL prefixes that Datadog is allowed to trace. |
 
 ## Developer Notes
+
+### Development Status
+
+This repository is a work in progress and is not yet officially supported.
 
 <a id="footnote-1"></a>
 
