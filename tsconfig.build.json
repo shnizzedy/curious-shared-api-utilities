@@ -4,6 +4,7 @@
     "src/shared/tests/**",
     "src/shared/mock.ts",
     "src/**/*.test.ts",
-    "src/__mocks__"
+    "src/__mocks__",
+    "**/*.styles.ts"
   ]
 }

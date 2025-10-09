@@ -17,11 +17,16 @@
     "noFallthroughCasesInSwitch": true,
     "module": "esnext",
     "moduleResolution": "node",
+    "preserveSymlinks": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
+    "noEmit": false,
+    "declaration": false,
+    "declarationMap": false,
+    "outDir": "./dist",
+    "rootDir": "./src",
     "jsx": "react-jsx"
   },
   "include": ["src", "global.d.ts", "jest.config.js"],
-  "exclude": ["node_modules"]
+  "exclude": ["dist", "node_modules"]
 }

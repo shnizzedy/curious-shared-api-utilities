@@ -1,10 +1,12 @@
 name: Build and Deploy Dev
 
-on: workflow_dispatch
+on:  workflow_dispatch
   # push:
   #   branches:
   #     - develop
 
+permissions:
+  id-token: write
 jobs:
   version:
     runs-on: ubuntu-latest
