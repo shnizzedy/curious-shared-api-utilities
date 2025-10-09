@@ -25,7 +25,7 @@ export class DataExportWorkersManager {
     private shouldLogDataInDebugMode: boolean,
     private setDataIsExporting: Dispatch<SetStateAction<boolean>>,
     private handleExportPopupClose: () => void,
-    private appletId: string,
+    private appletId: string | undefined,
     private setCurrentPage: Dispatch<SetStateAction<number>>,
     private limitRef: MutableRefObject<number>,
     private finishedPagesRef: MutableRefObject<Set<number>>,

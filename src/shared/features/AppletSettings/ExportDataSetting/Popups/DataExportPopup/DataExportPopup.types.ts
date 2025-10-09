@@ -43,7 +43,7 @@ export type IdleWorker = Worker & {
 
 export type MultipleDecryptWorkersProps = {
   handleExportPopupClose: () => void;
-  appletId: string;
+  appletId: string | undefined;
   privateKeyRef: MutableRefObject<number[] | null>;
   encryption?: Encryption | null;
   filters?: ExportDataFilters;

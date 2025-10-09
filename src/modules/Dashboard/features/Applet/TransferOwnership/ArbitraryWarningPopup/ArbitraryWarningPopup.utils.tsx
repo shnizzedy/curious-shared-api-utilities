@@ -54,7 +54,7 @@ export const getScreens = ({
           servers from this point forward.
         </strong>
         To proceed with the ownership transfer for your applet
-        <strong>{{ appletName }}</strong>
+        <strong><>{{ appletName }}</></strong>
         and break its arbitrary server connections, please re-enter the password of your applet
         below.
       </Trans>
