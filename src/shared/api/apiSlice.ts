@@ -1,5 +1,6 @@
 import { BaseQueryFn, createApi, FetchBaseQueryError } from '@reduxjs/toolkit/query/react';
 import { AxiosError, AxiosRequestConfig, Method } from 'axios';
+export type { AxiosRequestConfig } from 'axios';
 
 import { authApiClient } from './apiConfig';
 

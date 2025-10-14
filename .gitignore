@@ -21,6 +21,7 @@
 .env.production.local
 
 npm-debug.log*
+*.tsbuildinfo
 yarn-debug.log*
 yarn-error.log*
 
