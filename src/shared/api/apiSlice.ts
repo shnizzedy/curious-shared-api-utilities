@@ -1,6 +1,6 @@
 import { BaseQueryFn, createApi, FetchBaseQueryError } from '@reduxjs/toolkit/query/react';
-import { AxiosError, AxiosRequestConfig, Method } from 'axios';
-export type { AxiosRequestConfig } from 'axios';
+import { AxiosError, AxiosRequestConfig, InternalAxiosRequestConfig, Method } from 'axios';
+export type { AxiosRequestConfig, InternalAxiosRequestConfig } from 'axios';
 
 import { authApiClient } from './apiConfig';
 
@@ -13,7 +13,7 @@ const axiosBaseQuery: BaseQueryFn<
     method?: AxiosRequestConfig['method'];
     body?: AxiosRequestConfig['data'];
     params?: AxiosRequestConfig['params'];
-    headers?: AxiosRequestConfig['headers'];
+    headers?: InternalAxiosRequestConfig['headers'];
   },
   unknown,
   FetchBaseQueryError
