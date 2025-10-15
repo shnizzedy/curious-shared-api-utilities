@@ -28,5 +28,12 @@
     "jsx": "react-jsx"
   },
   "include": ["src", "global.d.ts", "jest.config.js"],
-  "exclude": ["dist", "node_modules"]
+  "exclude": ["dist", "node_modules"],
+  "paths": {
+    "api/*": ["./src/shared/api/*"],
+    "modules/*": ["./src/modules/*"],
+    "redux/*": ["./src/redux/*"],
+    "resources/*": ["./src/resources/*"],
+    "shared/*": ["./src/shared/*"]
+  },
 }
